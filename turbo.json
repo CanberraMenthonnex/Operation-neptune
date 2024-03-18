@@ -5,10 +5,14 @@
       "cache": false,
       "persistent": true
     },
+    "type-check": {},
     "build": {
       "outputs": ["dist/**"]
     },
     "format": {
+      "inputs": ["src/**/*.{ts,tsx}"]
+    },
+    "format:check": {
       "inputs": ["src/**/*.{ts,tsx}"]
     },
     "lint": {

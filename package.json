@@ -12,7 +12,8 @@
     "build:client": "turbo type-check build --filter=./client",
     "build:server": "turbo build --filter=./api",
     "lint": "turbo lint",
-    "format": "turbo format"
+    "format": "turbo format",
+    "format:check": "turbo format --check"
   },
   "devDependencies": {
     "turbo": "^1.12.5"
