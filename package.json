@@ -1,0 +1,21 @@
+{
+  "name": "operation-neptune",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "api",
+    "client"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo type-check build",
+    "build:client": "turbo type-check build --filter=./client",
+    "build:server": "turbo build --filter=./api",
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "format:check": "turbo format --check"
+  },
+  "devDependencies": {
+    "turbo": "^1.12.5"
+  }
+}
