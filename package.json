@@ -17,8 +17,5 @@
   },
   "devDependencies": {
     "turbo": "^1.12.5"
-  },
-  "dependencies": {
-    "classnames": "^2.5.1"
   }
 }
