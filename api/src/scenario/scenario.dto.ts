@@ -1,6 +1,7 @@
 import { Expose, Type } from 'class-transformer'
 import { IsArray, IsNotEmpty, IsString, ValidateNested } from 'class-validator'
 
+import { Character } from '../character/character.types'
 import { ScenarioDto, ScenarioSceneDto } from './scenario.type'
 
 /**
@@ -21,7 +22,7 @@ class ScenarioSceneDtoImpl implements ScenarioSceneDto {
 
   @Expose()
   @IsArray()
-  characters!: any[] // @TODO: add character type when it's defined
+  characters!: Character[]
 }
 /**
  *
