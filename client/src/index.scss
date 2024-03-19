@@ -1,10 +1,10 @@
 /* Colors */
 
-:root{
-  --primary-color: #DE974F;
-  --white-color: #FFFFFF;
+:root {
+  --primary-color: #de974f;
+  --white-color: #ffffff;
   --black-color: #121515;
-  --dark-color: #1B1D21;
+  --dark-color: #1b1d21;
 }
 
 /* Fonts */
@@ -32,4 +32,3 @@
 body {
   @apply text-font;
 }
-
