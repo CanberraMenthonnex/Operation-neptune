@@ -1,0 +1,35 @@
+/* Colors */
+
+:root{
+  --primary-color: #DE974F;
+  --white-color: #FFFFFF;
+  --black-color: #121515;
+  --dark-color: #1B1D21;
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Monserrat:wght@400;700&display=swap');
+
+.title-font {
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 700;
+}
+
+.text-font {
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 400;
+}
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @apply text-font;
+}
+
