@@ -1,8 +1,6 @@
-import { IconsList, IconsName } from './iconsList'
+import { IconProps } from './icon.interface.ts'
+import { IconsList } from './iconsList.ts'
 
-interface IconProps {
-  name: IconsName
-}
 export function Icon({ name }: IconProps) {
   const SVGIcon = IconsList[name]
   return <SVGIcon />
