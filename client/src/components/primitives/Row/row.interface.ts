@@ -6,7 +6,6 @@
 */
 
 export interface CharacterRow {
-  type: 'character'
   imageSrc?: string
   name: string
   profession: string
@@ -14,13 +13,17 @@ export interface CharacterRow {
 }
 
 export interface ScenarioRow {
-  type: 'scenario'
   title: string
   scenesNumber: number
   charactersNumber: number
 }
 
-export type RowProps = { type: 'character' | 'scenario' } & (
-  | CharacterRow
-  | ScenarioRow
-)
+export type RowProps =
+  | {
+      rowType: 'character'
+      rowData: CharacterRow
+    }
+  | {
+      rowType: 'scenario'
+      rowData: ScenarioRow
+    }
