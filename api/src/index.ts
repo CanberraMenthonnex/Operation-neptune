@@ -25,7 +25,6 @@ app.get('/', (_, res) => {
 app.use('/scenario', scenarioRouter)
 app.use('/character', characterRouter)
 
-
 // Set up the error middleware
 app.use(errorMiddleware)
 
