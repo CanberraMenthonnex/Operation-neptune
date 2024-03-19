@@ -3,7 +3,14 @@ import classNames from 'classnames'
 import { ButtonProps } from './button.interface.ts'
 import styles from './button.module.css'
 
-function Button({ title, color }: ButtonProps) {
+/**
+ * Button component
+ *
+ * @params {ReactNode} children - Button content
+ * @params {ButtonColors} color - Button color
+ * @returns {ReactElement} - Button component
+ */
+export default function Button({ children, color }: ButtonProps) {
   let variant
 
   switch (color) {
@@ -20,9 +27,9 @@ function Button({ title, color }: ButtonProps) {
 
   return (
     <>
-      <button className={classNames([styles.button, variant])}>{title}</button>
+      <button className={classNames([styles.button, variant])}>
+        {children}
+      </button>
     </>
   )
 }
-
-export default Button
