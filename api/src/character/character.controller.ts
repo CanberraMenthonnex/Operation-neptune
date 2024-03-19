@@ -1,7 +1,7 @@
 /*
- * This Controller is used to handle the character related requests
- * It will use the use case to handle the business logic and the types to define the structure of the data.
- * The controller will be used by the router to handle the requests from the client.
+ * This controller is responsible for handling the CRUD operations for the Character module.
+ * It interacts with the CharacterUseCase to perform the operations.
+ * It is called by the character router.
  * */
 import { NextFunction, Request, Response } from 'express'
 
@@ -12,6 +12,7 @@ import { CharacterUseCase } from './character.usecase'
 export class CharacterController {
   constructor(private readonly useCase = new CharacterUseCase()) {}
 
+  // createCharacter is needing a CharacterScheme like json object to create a character
   async createCharacter(req: Request, res: Response, next: NextFunction) {
     const dto = await validateDto(CharacterDtoImp, req.body, next)
     if (!dto) return

@@ -1,7 +1,6 @@
 /*
  * This class is used to define the character repository interface
- * It defines the methods that the repository must implement to interact with the database.
- * The repository is then implemented in the database connection and used in the use case.
+ * It interacts with the database to perform CRUD operations
  * */
 import { CharacterModel } from './character.model'
 import { Character, CharacterDto } from './character.types'

@@ -32,11 +32,6 @@ export interface CharacterInventory {
   items: string[]
 }
 
-/*
- * Here we define the DTOs for the character object
- * The DTOs are used to validate the input and output of the character object
- * */
-
 export type CharacterStatsDto = Omit<CharacterStats, '_id'>
 export type CharacterSkillsDto = Omit<CharacterSkills, '_id'>
 export type CharacterInventoryDto = Omit<CharacterInventory, '_id'>

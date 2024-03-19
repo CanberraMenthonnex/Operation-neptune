@@ -1,7 +1,6 @@
 /*
  * Business logic for the Character module.
  * It interacts with the Character repository to perform CRUD operations.
- * The use case will be used by the Character controller to handle the requests from the client.
  * */
 import { CharacterRepository } from './character.repository'
 import { Character, CharacterDto } from './character.types'

@@ -1,5 +1,5 @@
 /*
- * The router will use the controller to handle the requests from the client and then send the response back to the client.
+ * This router defines the routes for the character entity
  * */
 import { Router } from 'express'
 

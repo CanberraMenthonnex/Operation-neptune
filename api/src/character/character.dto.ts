@@ -1,7 +1,3 @@
-/*
- * The DTOs are used to validate the input and output of the character object
- * We are using the class-transformer and class-validator libraries to validate the input and output of the character object
- * */
 import { Expose, Type } from 'class-transformer'
 import {
   IsArray,
@@ -17,6 +13,10 @@ import {
   CharacterSkillsDto,
   CharacterStatsDto,
 } from './character.types'
+
+/*
+ * This class is a validator for the character stats DTO
+ * */
 
 class CharacterStatsDtoImp implements CharacterStatsDto {
   @Expose()
@@ -36,6 +36,10 @@ class CharacterStatsDtoImp implements CharacterStatsDto {
   initiative!: number
 }
 
+/*
+ * This class is a validator for the character skills DTO
+ * */
+
 class CharacterSkillsDtoImp implements CharacterSkillsDto {
   @Expose()
   @IsString()
@@ -47,12 +51,20 @@ class CharacterSkillsDtoImp implements CharacterSkillsDto {
   skills!: string[]
 }
 
+/*
+ * This class is a validator for the character inventory DTO
+ * */
+
 class CharacterInventoryDtoImp implements CharacterInventoryDto {
   @Expose()
   @IsArray()
   @IsString({ each: true })
   items!: string[]
 }
+
+/*
+ *  This class is a validator for the character DTO
+ * */
 
 export class CharacterDtoImp implements CharacterDto {
   @Expose()

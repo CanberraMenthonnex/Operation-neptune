@@ -1,7 +1,6 @@
 /*
- * The characterSchema is a Mongoose schema that defines the structure of the character object.
- * It reuses the Character interface to define the types of the fields.
- * The schema is then exported to be used in the database connection and model.
+ * The schema is needed defines the structure of the character object in the database.
+ *  It's based on the Character type.
  */
 import { Schema, model } from 'mongoose'
 
