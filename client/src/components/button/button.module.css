@@ -1,0 +1,20 @@
+.button {
+  height: 28px;
+  width: 150px;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  border-width: 1px;
+}
+
+.buttonOrange {
+  border: solid var(--white-color) 1px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.buttonRed {
+  border: solid var(--white-color) 1px;
+  color: var(--white-color);
+  background-color: var(--alert-color);
+}
