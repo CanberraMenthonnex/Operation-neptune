@@ -1,15 +1,20 @@
+/*
+* These interfaces are used to define the structure of the character object
+* */
+
 export interface Character {
-    id?: number
+    _id: string
     name: string
     profession: string
-    clearance: number
+    clearance: string
     stats: CharacterStats
     skills: CharacterSkills[]
     inventory: CharacterInventory
+    avatar: string
 }
 
 export interface CharacterStats {
-    id?: number
+    _id: string
     physical: number
     mental: number
     social: number
@@ -17,12 +22,28 @@ export interface CharacterStats {
 }
 
 export interface CharacterSkills {
-    id?: number
+    _id: string
     skillSet: string
     skills: string[]
 }
 
 export interface CharacterInventory {
-    id?: number
+    _id: string
     items: string[]
+}
+
+/*
+* Here we define the DTOs for the character object
+* The DTOs are used to validate the input and output of the character object
+* */
+
+export type CharacterStatsDto = Omit<CharacterStats, '_id'>
+export type CharacterSkillsDto = Omit<CharacterSkills, '_id'>
+export type CharacterInventoryDto = Omit<CharacterInventory, '_id'>
+
+
+export type CharacterDto = Omit<Character, '_id' | 'stats' | 'skills' | 'inventory'> & {
+    stats: CharacterStatsDto
+    skills: CharacterSkillsDto[]
+    inventory: CharacterInventoryDto
 }

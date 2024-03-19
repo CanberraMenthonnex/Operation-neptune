@@ -6,6 +6,7 @@ import 'reflect-metadata'
 import { connectDb } from './core/database'
 import { errorMiddleware } from './core/middlewares/error.middleware'
 import { scenarioRouter } from './scenario/scenario.routes'
+import { characterRouter } from './character/character.router'
 
 const app = express()
 const port = process.env.PORT
@@ -13,16 +14,19 @@ const port = process.env.PORT
 // Connect to the database
 connectDb().catch((error) => console.error(error))
 
-// Setup the global middlewares
+// Set up the global middlewares
 app.use(bodyParser.json())
 
 app.get('/', (_, res) => {
   res.send('Server is running!')
 })
 
+// Use the custom routers
 app.use('/scenario', scenarioRouter)
+app.use('/character', characterRouter)
 
-// Setup the error middleware
+
+// Set up the error middleware
 app.use(errorMiddleware)
 
 app.listen(port, () => {
