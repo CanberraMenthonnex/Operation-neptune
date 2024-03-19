@@ -1,4 +1,4 @@
-import { RowProps } from './row.interface'
+import { RowProps } from './row.interface.ts'
 import styles from './row.module.css'
 
 /**
