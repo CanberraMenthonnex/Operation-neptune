@@ -23,7 +23,7 @@ function Row({ rowType, rowData }: RowProps) {
           <div className={styles.rowRight}>
             <p className="text-font">{rowData.profession}</p>
             <p className={`text-font ${styles.rowTextOrange}`}>
-              {rowData.rang}
+              {rowData.clearance}
             </p>
           </div>
         </div>
