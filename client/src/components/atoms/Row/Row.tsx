@@ -4,11 +4,12 @@ import styles from './row.module.css'
 /**
  * Row component
  *
- * 2 types (use row.interface.ts):
+ * @description 2 types (use row.interface.ts):
  *  - type character (input: CharacterRow values)
  *  - type scenario (input: ScenarioRow values)
  *
- * @param {RowProps} row - row object
+ * @param {string} rowType - Row type
+ * @param {CharacterRow | ScenarioRow} rowData - Row data
  * @returns {ReactElement} - Row component
  */
 function Row({ rowType, rowData }: RowProps) {

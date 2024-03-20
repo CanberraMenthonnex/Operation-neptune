@@ -6,6 +6,8 @@ import styles from './information.module.css'
 /**
  * Information component
  *
+ * @description A component to display information
+ *
  * @params {place} string - Information place
  * @params {context} string - Information context
  * @returns {ReactElement} - Information component

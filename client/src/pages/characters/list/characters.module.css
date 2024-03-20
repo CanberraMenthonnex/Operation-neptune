@@ -1,3 +1,4 @@
+/* Style of the characters list screen */
 .charactersList {
   display: flex;
   flex-direction: column;

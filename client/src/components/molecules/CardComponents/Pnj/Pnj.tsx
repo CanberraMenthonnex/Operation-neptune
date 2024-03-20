@@ -6,6 +6,8 @@ import styles from './pnj.module.css'
 /**
  * Pnj component
  *
+ * @description A component to display a pnj
+ *
  * @params {name} string - Pnj name
  * @params {imageSrc} string - Pnj image source
  * @returns {ReactElement} - Pnj component

@@ -8,7 +8,7 @@ import { scenarios } from './scenarios.mock'
 import styles from './scenarios.module.css'
 
 /**
- * scenarios page
+ * Scenarios page
  *
  * @description - This is the scenarios page
  * @returns {ReactElement} - scenarios page

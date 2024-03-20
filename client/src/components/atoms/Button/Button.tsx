@@ -7,6 +7,7 @@ import styles from './button.module.css'
  * Button component
  *
  * @description A button component
+ *
  * @params {ReactNode} children - Button content
  * @params {ButtonColors} color - Button color
  * @returns {ReactElement} - Button component

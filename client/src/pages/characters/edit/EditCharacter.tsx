@@ -5,6 +5,12 @@ import FormInput from '@components/molecules/FormInput'
 
 import styles from './editCharacter.module.scss'
 
+/**
+ * EditCharacter component
+ *
+ * @description A component to edit a character
+ * @returns {ReactElement} - EditCharacter component
+ */
 function EditCharacter() {
   return (
     <Box title="Characters" action={<Button color="orange">Add</Button>}>

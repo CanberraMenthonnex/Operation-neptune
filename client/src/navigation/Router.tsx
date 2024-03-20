@@ -1,3 +1,4 @@
+// The router that will handle the navigation of the application
 import { Route, Routes } from 'react-router-dom'
 
 import { routes } from './routes'

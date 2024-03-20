@@ -8,7 +8,10 @@ import styles from './textArea.module.scss'
 /**
  * Text area component
  *
- * Let the user enter multiple lines of text
+ * @description A component to display a text area
+ *
+ * @param {string} label - Text area label
+ * @param {number} rows - Text area rows
  * @returns {ReactElement} - Text area component
  */
 export default function TextArea({ label, rows = 3 }: TextAreaProps) {

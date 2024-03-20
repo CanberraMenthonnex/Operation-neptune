@@ -4,6 +4,8 @@ import styles from './navbar.module.css'
 
 /**
  * Navbar component
+ *
+ * @description A component to display the navbar
  * @returns {ReactElement} - Navbar component
  */
 function Navbar() {

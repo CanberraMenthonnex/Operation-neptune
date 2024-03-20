@@ -9,7 +9,7 @@ import { FormInputProps } from './formInput.interface'
 /**
  * FormInput component
  *
- * Input component with label and edit button
+ * @description A component to display an input with label and edit button
  *
  * @param {string} label - Input label
  * @returns {ReactElement} - FormInput component

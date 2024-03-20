@@ -4,7 +4,7 @@ import { InputProps } from './input.types'
 /**
  * Input component
  *
- * Let the user enter data
+ * @description A component to display an input
  *
  * @param {string} id - Input id
  * @param {ReactNode} before - ReactNode to be rendered before the input

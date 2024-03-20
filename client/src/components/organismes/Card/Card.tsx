@@ -9,6 +9,7 @@ import styles from './card.module.css'
 /**
  * Card component
  *
+ * @description A component to display a card
  * @params {scenarioName} string - Card content
  * @returns {ReactElement} - Card component
  */
