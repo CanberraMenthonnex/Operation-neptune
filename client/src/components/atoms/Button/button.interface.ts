@@ -1,3 +1,4 @@
+// Button props interface
 import { ReactNode } from 'react'
 
 export interface ButtonProps {

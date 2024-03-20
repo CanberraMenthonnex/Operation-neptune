@@ -5,6 +5,7 @@ import styles from './box.module.scss'
  * Box component
  *
  * @description A box component with a title and an action
+ *
  * @param {string} title - The title of the box
  * @param {ReactNode} action - The action to be displayed on the right side of the title
  * @param {ReactNode} children - The content of the box

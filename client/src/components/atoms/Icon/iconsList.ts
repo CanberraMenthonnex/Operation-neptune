@@ -1,3 +1,4 @@
+// List here all the icons available in the app
 import {
   Basket,
   Book,

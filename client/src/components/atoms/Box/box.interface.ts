@@ -1,3 +1,4 @@
+// Box props interface
 import { ReactNode } from 'react'
 
 export interface BoxProps {

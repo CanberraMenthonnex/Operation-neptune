@@ -1,3 +1,4 @@
+// Icon props interface
 import { IconsName } from './iconsList'
 
 export interface IconProps {

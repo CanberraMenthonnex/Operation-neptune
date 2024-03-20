@@ -1,3 +1,4 @@
+// NabvarItem props interface
 import { IconsName } from '@components/atoms/Icon/iconsList'
 
 export interface NavbarItemProps {

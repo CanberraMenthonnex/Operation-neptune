@@ -1,1 +1,1 @@
-export * from './Pnj'
+export { default } from './Pnj'

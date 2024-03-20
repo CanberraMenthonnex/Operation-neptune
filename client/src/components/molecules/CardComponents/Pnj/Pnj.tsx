@@ -1,10 +1,12 @@
-import { Icon } from '@components/atoms/Icon'
+import Icon from '@components/atoms/Icon'
 
 import { PnjProps } from './pnj.interface'
 import styles from './pnj.module.css'
 
 /**
  * Pnj component
+ *
+ * @description A component to display a pnj
  *
  * @params {name} string - Pnj name
  * @params {imageSrc} string - Pnj image source

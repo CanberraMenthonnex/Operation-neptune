@@ -1,15 +1,15 @@
-//import { CardProps } from './card.interface'
+import Icon from '@components/atoms/Icon'
 import Information from '@components/molecules/CardComponents/Information/Information'
 import Pnj from '@components/molecules/CardComponents/Pnj/Pnj'
 
 import ImageTest from '../../../../public/vite.svg'
-import { Icon } from '../../atoms/Icon'
 import { CardProps } from './card.interface'
 import styles from './card.module.css'
 
 /**
  * Card component
  *
+ * @description A component to display a card
  * @params {scenarioName} string - Card content
  * @returns {ReactElement} - Card component
  */
