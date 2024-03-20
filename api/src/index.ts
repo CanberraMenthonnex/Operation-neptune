@@ -3,7 +3,7 @@ import 'dotenv/config'
 import express from 'express'
 import 'reflect-metadata'
 
-import { characterRouter } from './character/character.router'
+import { characterRouter } from './character/character.routes'
 import { connectDb } from './core/database'
 import { errorMiddleware } from './core/middlewares/error.middleware'
 import { scenarioRouter } from './scenario/scenario.routes'
