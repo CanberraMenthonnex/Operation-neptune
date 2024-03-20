@@ -1,5 +1,5 @@
-import { IconProps } from './icon.interface.ts'
-import { IconsList } from './iconsList.ts'
+import { IconProps } from './icon.interface'
+import { IconsList } from './iconsList'
 
 /**
  * Icon component
@@ -19,7 +19,7 @@ export function Icon({ name, size, color, className }: IconProps) {
     style = { ...style, maxWidth: `${size}px`, maxHeight: `${size}px` }
   }
   if (color) {
-    style = { ...style, fill: color }
+    style = { ...style, color: color }
   }
 
   return <SVGIcon style={style} className={className} />

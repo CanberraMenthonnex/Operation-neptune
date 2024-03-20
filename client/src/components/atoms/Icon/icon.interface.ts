@@ -1,4 +1,4 @@
-import { IconsName } from './iconsList.ts'
+import { IconsName } from './iconsList'
 
 export interface IconProps {
   name: IconsName

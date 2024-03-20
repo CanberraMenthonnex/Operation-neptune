@@ -1,5 +1,5 @@
 import styles from './input.module.scss'
-import { InputProps } from './input.types.ts'
+import { InputProps } from './input.types'
 
 /**
  * Input component

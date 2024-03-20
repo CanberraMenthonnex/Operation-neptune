@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 
-import { ButtonProps } from './button.interface.ts'
+import { ButtonProps } from './button.interface'
 import styles from './button.module.css'
 
 /**
