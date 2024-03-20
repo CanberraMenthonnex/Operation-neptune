@@ -1,14 +1,18 @@
-import Navbar from './components/molecules/Navbar/Navbar'
+import { BrowserRouter } from 'react-router-dom'
+
+import Navbar from './components/organismes/Navbar/Navbar'
 import Router from './navigation/Router'
 
 function App() {
   return (
-    <div id="app">
-      <Navbar />
-      <main>
-        <Router />
-      </main>
-    </div>
+    <BrowserRouter>
+      <div id="app">
+        <Navbar />
+        <main>
+          <Router />
+        </main>
+      </div>
+    </BrowserRouter>
   )
 }
 
