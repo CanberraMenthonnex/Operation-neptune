@@ -14,13 +14,24 @@ import styles from './textArea.module.scss'
  * @param {number} rows - Text area rows
  * @returns {ReactElement} - Text area component
  */
-export default function TextArea({ label, rows = 3, value, onChange }: TextAreaProps) {
+export default function TextArea({
+  label,
+  rows = 3,
+  value,
+  onChange,
+}: TextAreaProps) {
   const id = useId()
 
   return (
     <div className={styles.textAreaContainer}>
       <InputLabel htmlFor={id}>{label}</InputLabel>
-      <textarea id={id} rows={rows} className={styles.textArea} value={value} onChange={onChange}/>
+      <textarea
+        id={id}
+        rows={rows}
+        className={styles.textArea}
+        value={value}
+        onChange={onChange}
+      />
     </div>
   )
 }

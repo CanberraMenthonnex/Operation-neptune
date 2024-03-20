@@ -1,5 +1,6 @@
-import { ScenarioRepository } from './scenario.repository'
 import { Scenario, ScenarioDto } from 'types'
+
+import { ScenarioRepository } from './scenario.repository'
 
 /**
  * Business logic for the scenario module.

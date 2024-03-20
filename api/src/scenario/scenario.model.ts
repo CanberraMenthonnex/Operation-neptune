@@ -1,7 +1,6 @@
 import { Schema, model } from 'mongoose'
 import { Scenario } from 'types'
 
-
 /**
  * It defines the database schema for the Scenario model.
  * It's based on the Scenario type.

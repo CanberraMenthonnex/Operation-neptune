@@ -2,8 +2,9 @@
  * Business logic for the Character module.
  * It interacts with the Character repository to perform CRUD operations.
  * */
-import { CharacterRepository } from './character.repository'
 import { Character, CharacterDto } from 'types'
+
+import { CharacterRepository } from './character.repository'
 
 export class CharacterUseCase {
   constructor(private readonly repository = new CharacterRepository()) {}

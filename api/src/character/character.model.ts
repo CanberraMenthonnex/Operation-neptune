@@ -3,7 +3,6 @@
  *  It's based on the Character type.
  */
 import { Schema, model } from 'mongoose'
-
 import { Character } from 'types'
 
 const characterSchema = new Schema<Character>({

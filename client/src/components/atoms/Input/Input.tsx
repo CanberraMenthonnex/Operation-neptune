@@ -13,11 +13,22 @@ import { InputProps } from './input.types'
  * @param {Function} onChange - Function to be called when the input value changes
  * @returns {ReactElement} - Input component
  */
-export default function Input({ id, before, after, value, onChange }: InputProps) {
+export default function Input({
+  id,
+  before,
+  after,
+  value,
+  onChange,
+}: InputProps) {
   return (
     <div className={styles.inputContainer}>
       {before}
-      <input id={id} className={styles.input} value={value} onChange={onChange}/>
+      <input
+        id={id}
+        className={styles.input}
+        value={value}
+        onChange={onChange}
+      />
       {after}
     </div>
   )

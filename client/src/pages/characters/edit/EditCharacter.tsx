@@ -18,20 +18,23 @@ function EditCharacter() {
   const navigate = useNavigate()
   const params = useParams()
   const characterId = params.id
-  const { characterForm, dispatchCharacterForm, editCharacter, removeCharacter } = useCharacters(
-    {
-      characterId,
-      onCharacterUpdated: () => {
-        navigate('/characters')
-      },
-      onCharacterDeleted: () => {
-        navigate('/characters')
-      }
-    }
-  )
+  const {
+    characterForm,
+    dispatchCharacterForm,
+    editCharacter,
+    removeCharacter,
+  } = useCharacters({
+    characterId,
+    onCharacterUpdated: () => {
+      navigate('/characters')
+    },
+    onCharacterDeleted: () => {
+      navigate('/characters')
+    },
+  })
 
   return (
-    <Box title="Characters" action={<Button color="orange">Add</Button>}>
+    <Box title="Characters">
       <div className={styles.modal}>
         <div className={styles.header}>
           <Link to={'/characters'}>Back</Link>
@@ -81,7 +84,10 @@ function EditCharacter() {
           </div>
           <div>
             <div className={styles.avatar}>
-              <img src="https://images.unsplash.com/flagged/photo-1578074606880-a7f5c9a30418?q=80&w=2272&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Avatar" />
+              <img
+                src="https://images.unsplash.com/flagged/photo-1578074606880-a7f5c9a30418?q=80&w=2272&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Avatar"
+              />
             </div>
           </div>
           <div className={styles.statsContainer}>
@@ -198,7 +204,11 @@ function EditCharacter() {
           <Button color="orange" onClick={editCharacter}>
             Save
           </Button>
-          {characterId && <Button color="red" onClick={removeCharacter}>Delete</Button>}
+          {characterId && (
+            <Button color="red" onClick={removeCharacter}>
+              Delete
+            </Button>
+          )}
         </div>
       </div>
     </Box>

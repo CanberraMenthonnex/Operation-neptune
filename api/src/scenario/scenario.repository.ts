@@ -1,4 +1,5 @@
 import { Scenario, ScenarioDto } from 'types'
+
 import { ScenarioModel } from './scenario.model'
 
 /**

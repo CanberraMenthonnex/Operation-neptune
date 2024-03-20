@@ -2,8 +2,9 @@
  * This class is used to define the character repository interface
  * It interacts with the database to perform CRUD operations
  * */
-import { CharacterModel } from './character.model'
 import { Character, CharacterDto } from 'types'
+
+import { CharacterModel } from './character.model'
 
 export class CharacterRepository {
   create(character: CharacterDto) {

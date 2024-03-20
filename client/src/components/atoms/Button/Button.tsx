@@ -30,7 +30,10 @@ export default function Button({ children, color, onClick }: ButtonProps) {
 
   return (
     <>
-      <button className={classNames([styles.button, variant])} onClick={onClick}>
+      <button
+        className={classNames([styles.button, variant])}
+        onClick={onClick}
+      >
         {children}
       </button>
     </>

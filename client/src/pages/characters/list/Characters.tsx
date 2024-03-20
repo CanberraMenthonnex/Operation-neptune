@@ -20,7 +20,7 @@ export default function Characters() {
     <Box
       title="Characters"
       action={
-        <Link to={"/characters/create"}>
+        <Link to={'/characters/create'}>
           <Button color="orange">Add</Button>
         </Link>
       }
