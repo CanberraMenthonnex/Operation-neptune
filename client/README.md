@@ -5,5 +5,5 @@
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
-- [ESLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
+- [React router](https://reactrouter.com/)
+- [Storybook](https://storybook.js.org/)
