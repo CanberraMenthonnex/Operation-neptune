@@ -1,7 +1,10 @@
-import Box from '../../components/atoms/Box/Box.tsx'
-import Button from '../../components/atoms/Button/Button.tsx'
-import Row from '../../components/atoms/Row/Row.tsx'
-import { characters } from './characters.mock.ts'
+import { Link } from 'react-router-dom'
+
+import Box from '@components/atoms/Box/Box'
+import Button from '@components/atoms/Button/Button'
+import Row from '@components/atoms/Row/Row'
+
+import { characters } from './characters.mock'
 import styles from './characters.module.css'
 
 /**
@@ -15,7 +18,9 @@ export default function Characters() {
     <Box title="Characters" action={<Button color="orange">Add</Button>}>
       <div className={styles.charactersList}>
         {characters.map((character) => (
-          <Row key={character.id} rowType="character" rowData={character} />
+          <Link to={'/characters/edit'} key={character.id}>
+            <Row rowType="character" rowData={character} />
+          </Link>
         ))}
       </div>
     </Box>

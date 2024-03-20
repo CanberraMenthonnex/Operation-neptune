@@ -7,7 +7,7 @@ import {
   Pen,
   Plus,
   User,
-} from '../../../assets/icons'
+} from '@assets/icons'
 
 export const IconsList = {
   book: Book,

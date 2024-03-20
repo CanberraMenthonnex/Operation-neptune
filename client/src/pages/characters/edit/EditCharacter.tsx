@@ -1,7 +1,8 @@
-import Box from '../../components/atoms/Box/Box.tsx'
-import Button from '../../components/atoms/Button/Button.tsx'
-import TextArea from '../../components/atoms/TextArea/TextArea.tsx'
-import FormInput from '../../components/molecules/FormInput/FormInput.tsx'
+import Box from '@components/atoms/Box/Box'
+import Button from '@components/atoms/Button/Button'
+import TextArea from '@components/atoms/TextArea/TextArea'
+import FormInput from '@components/molecules/FormInput/FormInput'
+
 import styles from './editCharacter.module.scss'
 
 function EditCharacter() {
