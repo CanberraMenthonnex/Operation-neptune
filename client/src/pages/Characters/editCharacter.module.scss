@@ -1,12 +1,3 @@
-.page {
-  background-color: var(--dark-color);
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  color: var(--white-color);
-}
-
 .modal {
   position: absolute;
   left: 50%;
@@ -45,4 +36,5 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-top: 16px;
 }
