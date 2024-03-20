@@ -10,7 +10,7 @@ import { IconsList } from './iconsList'
  * @param {string} className - Icon class name
  * @returns {ReactElement} - Icon component
  */
-export function Icon({ name, size, color, className }: IconProps) {
+export default function Icon({ name, size, color, className }: IconProps) {
   const SVGIcon = IconsList[name]
 
   // Handle style (size and color)

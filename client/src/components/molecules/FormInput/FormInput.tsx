@@ -1,10 +1,10 @@
 import { useId } from 'react'
 
-import { Icon } from '@components/atoms/Icon'
 import Input from '@components/atoms/Input/Input'
 import InputLabel from '@components/atoms/InputLabel/InputLabel'
 
 import { FormInputProps } from './formInput.interface'
+import Icon from '@components/atoms/Icon/Icon'
 
 /**
  * FormInput component

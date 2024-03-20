@@ -1,6 +1,6 @@
+import Icon from '@components/atoms/Icon/Icon'
 import { Link, useLocation } from 'react-router-dom'
 
-import { Icon } from '@components/atoms/Icon'
 
 import { NavbarItemProps } from './navbarItem.interface'
 

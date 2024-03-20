@@ -1,3 +1,5 @@
+// Storybook story file for Box component
+
 import type { Meta, StoryObj } from '@storybook/react'
 
 import Box from './Box'
