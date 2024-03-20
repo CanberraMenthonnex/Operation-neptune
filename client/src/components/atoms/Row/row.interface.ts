@@ -9,7 +9,7 @@ export interface CharacterRow {
   imageSrc?: string
   name: string
   profession: string
-  rang: string
+  clearance: string
 }
 
 export interface ScenarioRow {
