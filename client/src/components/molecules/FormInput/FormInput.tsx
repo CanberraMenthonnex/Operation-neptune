@@ -12,9 +12,10 @@ import { FormInputProps } from './formInput.interface'
  * @description A component to display an input with label and edit button
  *
  * @param {string} label - Input label
+ * @param {string} value - Input value
  * @returns {ReactElement} - FormInput component
  */
-export default function FormInput({ label }: FormInputProps) {
+export default function FormInput({ label, value, onChange }: FormInputProps) {
   const id = useId()
 
   return (
@@ -22,6 +23,8 @@ export default function FormInput({ label }: FormInputProps) {
       id={id}
       before={<InputLabel htmlFor={id}>{label}</InputLabel>}
       after={<Icon name="pen" color={'var(--white-color)'} size={16} />}
+      value={value}
+      onChange={onChange}
     />
   )
 }

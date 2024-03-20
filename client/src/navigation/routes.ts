@@ -15,7 +15,8 @@ import { Routes } from './routes.interface'
 export const routes: Routes[] = [
   { Page: Home, path: '/' },
   { Page: Characters, path: '/characters' },
-  { Page: EditCharacter, path: '/characters/edit' },
   { Page: Scenarios, path: '/scenarios' },
   { Page: EditScenario, path: '/scenarios/edit' },
+  { Page: EditCharacter, path: '/characters/edit/:id' },
+  { Page: EditCharacter, path: '/characters/create' },
 ]

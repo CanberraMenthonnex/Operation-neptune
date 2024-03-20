@@ -1,4 +1,5 @@
 import bodyParser from 'body-parser'
+import cors from 'cors'
 import 'dotenv/config'
 import express from 'express'
 import 'reflect-metadata'
@@ -16,6 +17,12 @@ connectDb().catch((error) => console.error(error))
 
 // Set up the global middlewares
 app.use(bodyParser.json())
+
+app.use(
+  cors({
+    origin: '*',
+  })
+)
 
 app.get('/', (_, res) => {
   res.send('Server is running!')

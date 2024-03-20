@@ -4,7 +4,8 @@
   "description": "",
   "workspaces": [
     "api",
-    "client"
+    "client",
+    "types"
   ],
   "scripts": {
     "dev": "turbo dev",
@@ -13,7 +14,7 @@
     "build:server": "turbo build --filter=./api",
     "lint": "turbo lint",
     "format": "turbo format",
-    "format:check": "turbo format --check"
+    "format:check": "turbo format:check"
   },
   "devDependencies": {
     "turbo": "^1.12.5"

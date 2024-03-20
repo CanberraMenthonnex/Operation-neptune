@@ -1,4 +1,4 @@
-import { Scenario } from '../scenario/scenario.type'
+import { Scenario } from 'types'
 
 /**
  * The GeneratorService interacts with the AI to generate the data for the scenario and the characters based

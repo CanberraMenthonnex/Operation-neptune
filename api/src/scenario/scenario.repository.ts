@@ -1,5 +1,6 @@
+import { Scenario, ScenarioDto } from 'types'
+
 import { ScenarioModel } from './scenario.model'
-import { Scenario, ScenarioDto } from './scenario.type'
 
 /**
  * It interacts with the database to perform CRUD operations on the Scenario model.

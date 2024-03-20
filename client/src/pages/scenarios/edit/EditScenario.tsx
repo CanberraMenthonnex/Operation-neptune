@@ -15,7 +15,7 @@ function EditScenario() {
   return (
     <Box title="Scenario">
       <div className={styles.formInputDiv}>
-        <FormInput label="Generate" />
+        <FormInput label="Generate" value="" />
       </div>
       <div className={styles.scenarioDiv}>
         <Card scenarioName="Weapon shop" />

@@ -1,8 +1,6 @@
 import { Expose, Type } from 'class-transformer'
 import { IsArray, IsNotEmpty, IsString, ValidateNested } from 'class-validator'
-
-import { Character } from '../character/character.types'
-import { ScenarioDto, ScenarioSceneDto } from './scenario.type'
+import { Character, ScenarioDto, ScenarioSceneDto } from 'types'
 
 /**
  * It validates the incoming data of the Scenario Scene.

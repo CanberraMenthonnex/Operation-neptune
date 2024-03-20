@@ -1,6 +1,6 @@
-import { Character } from '../character/character.types'
+import { Character, Scenario } from 'types'
+
 import { CharacterUseCase } from '../character/character.usecase'
-import { Scenario } from '../scenario/scenario.type'
 import { GeneratorService } from './generator.service'
 
 /**

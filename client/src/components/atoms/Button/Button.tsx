@@ -10,9 +10,10 @@ import styles from './button.module.css'
  *
  * @params {ReactNode} children - Button content
  * @params {ButtonColors} color - Button color
+ * @params {() => void} onClick - Button click event
  * @returns {ReactElement} - Button component
  */
-export default function Button({ children, color }: ButtonProps) {
+export default function Button({ children, color, onClick }: ButtonProps) {
   let variant
 
   switch (color) {
@@ -29,7 +30,10 @@ export default function Button({ children, color }: ButtonProps) {
 
   return (
     <>
-      <button className={classNames([styles.button, variant])}>
+      <button
+        className={classNames([styles.button, variant])}
+        onClick={onClick}
+      >
         {children}
       </button>
     </>
