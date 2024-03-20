@@ -1,0 +1,21 @@
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: fit-content;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  height: 95%;
+  width: 42px;
+  border-radius: 6px;
+  margin-left: 10px;
+  padding: 10px 0;
+  border: solid var(--white-color) 1px;
+  background-color: var(--dark-color);
+}

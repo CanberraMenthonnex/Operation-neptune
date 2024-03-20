@@ -1,10 +1,14 @@
+import Navbar from './components/molecules/Navbar/Navbar'
 import Router from './navigation/Router'
 
 function App() {
   return (
-    <>
-      <Router />
-    </>
+    <div id="app">
+      <Navbar />
+      <main>
+        <Router />
+      </main>
+    </div>
   )
 }
 
