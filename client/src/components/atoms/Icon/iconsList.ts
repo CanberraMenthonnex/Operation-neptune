@@ -1,6 +1,7 @@
 import {
   Book,
   Cross,
+  Map,
   MapMarker,
   Message,
   Pen,
@@ -16,6 +17,7 @@ export const IconsList = {
   pen: Pen,
   plus: Plus,
   user: User,
+  map: Map,
 }
 
 export type IconsName = keyof typeof IconsList
