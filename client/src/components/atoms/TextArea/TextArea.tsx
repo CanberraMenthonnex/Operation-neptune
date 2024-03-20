@@ -1,6 +1,7 @@
 import { useId } from 'react'
 
-import InputLabel from '../InputLabel/InputLabel'
+import InputLabel from '@components/atoms/InputLabel/InputLabel'
+
 import { TextAreaProps } from './textArea.interface'
 import styles from './textArea.module.scss'
 
