@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import Box from '@components/atoms/Box/Box'
 import Button from '@components/atoms/Button/Button'
 import Row from '@components/atoms/Row/Row'
@@ -16,7 +18,9 @@ export default function Scenarios() {
     <Box title="Scenarios" action={<Button color="orange">Add</Button>}>
       <div className={styles.scenariosList}>
         {scenarios.map((scenario) => (
-          <Row key={scenario.id} rowType="scenario" rowData={scenario} />
+          <Link to={'/scenarios/edit'} key={scenario.id}>
+            <Row key={scenario.id} rowType="scenario" rowData={scenario} />
+          </Link>
         ))}
       </div>
     </Box>
