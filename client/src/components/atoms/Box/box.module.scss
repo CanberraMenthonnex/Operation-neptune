@@ -1,0 +1,28 @@
+.container {
+  width: 1000px;
+  height: 800px;
+  border: solid var(--white-color) 1px;
+  border-radius: 4px;
+  padding: 28px 24px;
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  > * {
+    flex: 1;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+}
