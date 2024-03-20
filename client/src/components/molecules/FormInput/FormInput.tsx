@@ -1,6 +1,6 @@
 import { useId } from 'react'
 
-import { Icon } from '@components/atoms/Icon'
+import Icon from '@components/atoms/Icon'
 import Input from '@components/atoms/Input/Input'
 import InputLabel from '@components/atoms/InputLabel/InputLabel'
 

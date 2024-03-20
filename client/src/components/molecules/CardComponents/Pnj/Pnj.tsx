@@ -1,4 +1,4 @@
-import { Icon } from '@components/atoms/Icon'
+import Icon from '@components/atoms/Icon'
 
 import { PnjProps } from './pnj.interface'
 import styles from './pnj.module.css'

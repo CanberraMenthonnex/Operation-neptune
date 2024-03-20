@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 
-import Box from '@components/atoms/Box/Box'
-import Button from '@components/atoms/Button/Button'
-import Row from '@components/atoms/Row/Row'
+import Box from '@components/atoms/Box'
+import Button from '@components/atoms/Button'
+import Row from '@components/atoms/Row'
 
 import { scenarios } from './scenarios.mock'
 import styles from './scenarios.module.css'

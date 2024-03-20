@@ -1,4 +1,4 @@
-import { Icon } from '@components/atoms/Icon'
+import Icon from '@components/atoms/Icon'
 
 import { InformationProps } from './information.interface'
 import styles from './information.module.css'
