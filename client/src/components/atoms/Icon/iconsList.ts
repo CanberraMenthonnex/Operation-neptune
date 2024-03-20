@@ -1,4 +1,5 @@
 import {
+  Basket,
   Book,
   Cross,
   Map,
@@ -6,10 +7,12 @@ import {
   Message,
   Pen,
   Plus,
+  Sixdots,
   User,
 } from '@assets/icons'
 
 export const IconsList = {
+  basket: Basket,
   book: Book,
   cross: Cross,
   mapMarker: MapMarker,
@@ -17,6 +20,7 @@ export const IconsList = {
   pen: Pen,
   plus: Plus,
   user: User,
+  sixdots: Sixdots,
   map: Map,
 }
 
