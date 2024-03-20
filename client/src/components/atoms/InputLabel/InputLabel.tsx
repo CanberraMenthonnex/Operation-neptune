@@ -1,4 +1,4 @@
-import { InputLabelProps } from './inputLabel.interface.ts'
+import { InputLabelProps } from './inputLabel.interface'
 import styles from './inputLabel.module.css'
 
 /**

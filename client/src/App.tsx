@@ -1,7 +1,9 @@
+import Router from './navigation/Router'
+
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <Router />
     </>
   )
 }

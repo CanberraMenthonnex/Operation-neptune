@@ -32,4 +32,6 @@
 
 body {
   @extend .text-font;
+  color: var(--white-color);
+  background-color: var(--black-color);
 }
