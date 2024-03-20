@@ -14,7 +14,7 @@
   height: 95%;
   width: 42px;
   border-radius: 6px;
-  margin-left: 10px;
+  margin: 0 10px;
   padding: 10px 0;
   border: solid var(--white-color) 1px;
   background-color: var(--dark-color);

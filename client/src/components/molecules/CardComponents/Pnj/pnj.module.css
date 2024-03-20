@@ -1,0 +1,20 @@
+.pnj {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.pnjImage {
+  object-fit: contain;
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
+  border: solid var(--white-color) 1px;
+  border-radius: 15px;
+}
+
+.pnjName {
+  flex-grow: 1;
+  font-size: 14px;
+}

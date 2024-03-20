@@ -1,0 +1,98 @@
+.cardContainer {
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+  padding: 20px;
+  border: solid var(--primary-color) 2px;
+  border-radius: 3px;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+.cardFirstContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cardDivTitle {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.cardDivTitle h2 {
+  font-size: 18px;
+}
+
+.cardSecondContent {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.cardDivPnj {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  width: 30%;
+}
+
+.cardDivPnjAdd {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.cardPnjAdd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  border: 0;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+
+.cardDivInfo {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.cardDivMove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-width: 40px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 550px) {
+  .cardSecondContent {
+    flex-direction: column;
+  }
+
+  .cardDivPnj,
+  .cardDivInfo {
+    width: 100%;
+  }
+
+  .cardDivPnj {
+    margin-bottom: 30px;
+  }
+}
