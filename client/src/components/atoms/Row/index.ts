@@ -1,1 +1,1 @@
-export * from './Row.tsx'
+export * from './Row'
