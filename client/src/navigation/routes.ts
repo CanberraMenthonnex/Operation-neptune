@@ -14,4 +14,5 @@ export const routes: Routes[] = [
   { Page: Home, path: '/' },
   { Page: Characters, path: '/characters' },
   { Page: EditCharacter, path: '/characters/edit' },
+  { Page: Scenarios, path: '/scenarios' },
 ]
