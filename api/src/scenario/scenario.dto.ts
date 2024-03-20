@@ -5,7 +5,7 @@ import { Character } from '../character/character.types'
 import { ScenarioDto, ScenarioSceneDto } from './scenario.type'
 
 /**
- * It validates the data of the Scenario Scene DTO.
+ * It validates the incoming data of the Scenario Scene.
  */
 class ScenarioSceneDtoImpl implements ScenarioSceneDto {
   @Expose()
@@ -26,7 +26,7 @@ class ScenarioSceneDtoImpl implements ScenarioSceneDto {
 }
 /**
  *
- * It validates the data of the Scenario DTO.
+ * It validates the incoming data of the Scenario DTO.
  */
 export class ScenarioDtoImpl implements ScenarioDto {
   @Expose()
