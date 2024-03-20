@@ -21,10 +21,10 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "src",
     "paths": {
-        "@assets/*": ["assets/*"],
-        "@components/*": ["components/*"],
-        "@pages/*": ["pages/*"],
-        "@navigation/*": ["navigation/*"],
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@navigation/*": ["navigation/*"]
     }
   },
   "include": ["src"],
