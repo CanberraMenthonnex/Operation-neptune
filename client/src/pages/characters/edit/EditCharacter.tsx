@@ -8,7 +8,7 @@ import styles from './editCharacter.module.scss'
 function EditCharacter() {
   return (
     <Box title="Characters" action={<Button color="orange">Add</Button>}>
-      <div className={styles.modal}>
+      <div>
         <div className={styles.container}>
           <div className={styles.statsContainer}>
             <FormInput label="Name" />
