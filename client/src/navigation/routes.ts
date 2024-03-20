@@ -1,6 +1,7 @@
 import Home from '@pages/Home'
 import EditCharacter from '@pages/characters/edit/EditCharacter'
 import Characters from '@pages/characters/list/Characters'
+import Scenarios from '@pages/scenarios/list/Scenarios'
 
 import { Routes } from './routes.interface'
 

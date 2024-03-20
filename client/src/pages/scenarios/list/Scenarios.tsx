@@ -1,14 +1,15 @@
-import Box from '../../components/atoms/Box/Box.tsx'
-import Button from '../../components/atoms/Button/Button.tsx'
-import Row from '../../components/atoms/Row/Row.tsx'
+import Box from '@components/atoms/Box/Box'
+import Button from '@components/atoms/Button/Button'
+import Row from '@components/atoms/Row/Row'
+
 import { scenarios } from './scenarios.mock'
 import styles from './scenarios.module.css'
 
 /**
- * Scenarios page
+ * scenarios page
  *
  * @description - This is the scenarios page
- * @returns {ReactElement} - Scenarios page
+ * @returns {ReactElement} - scenarios page
  */
 export default function Scenarios() {
   return (
