@@ -1,0 +1,48 @@
+.page {
+  background-color: var(--dark-color);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: var(--white-color);
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 32px;
+  border: solid 2px var(--white-color);
+  border-radius: 6px;
+  background-color: var(--dark-color);
+}
+
+.container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.avatar {
+  width: 212px;
+
+  img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}
+
+.skillContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
