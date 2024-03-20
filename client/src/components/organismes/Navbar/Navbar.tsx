@@ -1,4 +1,5 @@
-import NavbarItem from '../../molecules/NavbarItem/NavbarItem.tsx'
+import NavbarItem from '@components/molecules/NavbarItem/NavbarItem'
+
 import styles from './navbar.module.css'
 
 /**
