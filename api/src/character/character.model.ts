@@ -4,13 +4,14 @@
  */
 import { Schema, model } from 'mongoose'
 
-import { Character } from './character.types'
+import { Character } from 'types'
 
 const characterSchema = new Schema<Character>({
   name: { type: String, required: true },
   profession: { type: String, required: true },
   clearance: { type: String, required: true },
   avatar: { type: String, required: true },
+  description: { type: String, required: true },
   stats: {
     physical: { type: Number, required: true },
     mental: { type: Number, required: true },

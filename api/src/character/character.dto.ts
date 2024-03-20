@@ -12,7 +12,7 @@ import {
   CharacterInventoryDto,
   CharacterSkillsDto,
   CharacterStatsDto,
-} from './character.types'
+} from 'types'
 
 /*
  * This class is a validator for the character stats DTO
@@ -73,6 +73,10 @@ export class CharacterDtoImp implements CharacterDto {
 
   @Expose()
   @IsString()
+  description!: string
+
+  @Expose()
+  @IsString()
   profession!: string
 
   @Expose()
@@ -82,6 +86,7 @@ export class CharacterDtoImp implements CharacterDto {
   @Expose()
   @Type(() => CharacterStatsDtoImp)
   @ValidateNested()
+  @IsNotEmpty()
   stats!: CharacterStatsDto
 
   @Expose()

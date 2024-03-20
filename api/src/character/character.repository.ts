@@ -3,7 +3,7 @@
  * It interacts with the database to perform CRUD operations
  * */
 import { CharacterModel } from './character.model'
-import { Character, CharacterDto } from './character.types'
+import { Character, CharacterDto } from 'types'
 
 export class CharacterRepository {
   create(character: CharacterDto) {

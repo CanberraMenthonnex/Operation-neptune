@@ -4,7 +4,8 @@
   "description": "",
   "workspaces": [
     "api",
-    "client"
+    "client",
+    "types"
   ],
   "scripts": {
     "dev": "turbo dev",

@@ -14,6 +14,7 @@
 
 .avatar {
   width: 212px;
+  height: 212px;
 
   img {
     width: 100%;
@@ -27,4 +28,26 @@
   flex-direction: column;
   gap: 8px;
   margin-top: 16px;
+}
+
+.skillItem {
+  padding-left: 12px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  gap: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  * {
+    color: white;
+  }
 }

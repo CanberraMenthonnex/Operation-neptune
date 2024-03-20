@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose'
+import { Scenario } from 'types'
 
-import { Scenario } from './scenario.type'
 
 /**
  * It defines the database schema for the Scenario model.

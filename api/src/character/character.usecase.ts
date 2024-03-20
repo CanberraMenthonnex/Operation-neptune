@@ -3,7 +3,7 @@
  * It interacts with the Character repository to perform CRUD operations.
  * */
 import { CharacterRepository } from './character.repository'
-import { Character, CharacterDto } from './character.types'
+import { Character, CharacterDto } from 'types'
 
 export class CharacterUseCase {
   constructor(private readonly repository = new CharacterRepository()) {}
