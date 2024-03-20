@@ -1,4 +1,4 @@
-import { Icon } from '../../atoms/Icon'
+import NavbarItem from '../../molecules/NavbarItem/NavbarItem.tsx'
 import styles from './navbar.module.css'
 
 /**
@@ -10,9 +10,9 @@ function Navbar() {
     <>
       <div className={styles.navbarContainer}>
         <div className={styles.navbar}>
-          <Icon name="map" size={30} color="#FFFFFF" />
-          <Icon name="user" size={30} color="#FFFFFF" />
-          <Icon name="book" size={30} color="#FFFFFF" />
+          <NavbarItem link="/" icon="map" />
+          <NavbarItem link="/characters" icon="user" />
+          <NavbarItem link="/scenarios" icon="book" />
         </div>
       </div>
     </>
