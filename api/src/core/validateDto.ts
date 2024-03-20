@@ -2,7 +2,6 @@ import { ClassConstructor, plainToClass } from 'class-transformer'
 import { validate } from 'class-validator'
 import { ValidationError as ValidationErrorClassValidator } from 'class-validator'
 import { NextFunction } from 'express'
-
 import { ValidationError } from './errors/validation.error'
 
 const extractErrors = (errors: ValidationErrorClassValidator[]): string[] => {

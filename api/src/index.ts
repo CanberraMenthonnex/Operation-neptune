@@ -1,12 +1,14 @@
-import bodyParser from 'body-parser'
-import 'dotenv/config'
-import express from 'express'
-import 'reflect-metadata'
+import bodyParser from 'body-parser';
+import 'dotenv/config';
+import express from 'express';
+import 'reflect-metadata';
+import swaggerUi from 'swagger-ui-express';
+import swaggerFile from '../swagger-output.json';
+import { characterRouter } from './character/character.routes';
+import { connectDb } from './core/database';
+import { errorMiddleware } from './core/middlewares/error.middleware';
+import { scenarioRouter } from './scenario/scenario.routes';
 
-import { characterRouter } from './character/character.routes'
-import { connectDb } from './core/database'
-import { errorMiddleware } from './core/middlewares/error.middleware'
-import { scenarioRouter } from './scenario/scenario.routes'
 
 const app = express()
 const port = process.env.PORT
@@ -20,6 +22,8 @@ app.use(bodyParser.json())
 app.get('/', (_, res) => {
   res.send('Server is running!')
 })
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 // Use the custom routers
 app.use('/scenario', scenarioRouter)

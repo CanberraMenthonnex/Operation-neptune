@@ -1,0 +1,373 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "My API",
+    "description": "This is a REST API for the Operation-Neptune API"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Scenario",
+      "description": "Scenario endpoints"
+    },
+    {
+      "name": "Character",
+      "description": "Character endpoints"
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/": {
+      "post": {
+        "tags": [
+          "Character"
+        ],
+        "description": "Create a new character",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Scenario"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/Scenario"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Character"
+        ],
+        "description": "Get all characters",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/{id}": {
+      "get": {
+        "tags": [
+          "Character"
+        ],
+        "description": "Get a character by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Character"
+        ],
+        "description": "Update a character by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Character"
+        ],
+        "description": "Delete a character by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ScenarioScene": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string",
+          "example": "12345"
+        },
+        "name": {
+          "type": "string",
+          "example": "Weapon shop"
+        },
+        "place": {
+          "type": "string",
+          "example": "Weapon shop in the city center"
+        },
+        "context": {
+          "type": "string",
+          "example": "The main character is buying a new weapon for the upcoming battle."
+        },
+        "characters": {
+          "type": "array",
+          "items": {
+            "xml": {
+              "name": "character"
+            },
+            "$ref": "#/definitions/Character"
+          }
+        }
+      },
+      "xml": {
+        "name": "ScenarioScene"
+      }
+    },
+    "Scenario": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string",
+          "example": "12345"
+        },
+        "name": {
+          "type": "string",
+          "example": "Scenario 1"
+        },
+        "description": {
+          "type": "string",
+          "example": "This is the first scenario."
+        },
+        "scenes": {
+          "type": "array",
+          "items": {
+            "xml": {
+              "name": "scenarioscene"
+            },
+            "$ref": "#/definitions/ScenarioScene"
+          }
+        }
+      },
+      "xml": {
+        "name": "Scenario"
+      }
+    },
+    "ScenarioDto": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Scenario 1"
+        },
+        "description": {
+          "type": "string",
+          "example": "This is the first scenario."
+        },
+        "scenes": {
+          "type": "array",
+          "items": {
+            "xml": {
+              "name": "scenarioscenedto"
+            },
+            "$ref": "#/definitions/ScenarioSceneDto"
+          }
+        }
+      },
+      "xml": {
+        "name": "ScenarioDto"
+      }
+    },
+    "ScenarioSceneDto": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Weapon shop"
+        },
+        "place": {
+          "type": "string",
+          "example": "Weapon shop in the city center"
+        },
+        "context": {
+          "type": "string",
+          "example": "The main character is buying a new weapon for the upcoming battle."
+        },
+        "characters": {
+          "type": "array",
+          "items": {
+            "xml": {
+              "name": "character"
+            },
+            "$ref": "#/definitions/Character"
+          }
+        }
+      },
+      "xml": {
+        "name": "ScenarioSceneDto"
+      }
+    },
+    "Character": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string",
+          "example": "12345"
+        },
+        "name": {
+          "type": "string",
+          "example": "John Doe"
+        },
+        "profession": {
+          "type": "string",
+          "example": "Spy"
+        },
+        "clearance": {
+          "type": "string",
+          "example": "Top secret"
+        },
+        "stats": {
+          "xml": {
+            "name": "characterstats"
+          },
+          "$ref": "#/definitions/CharacterStats"
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "xml": {
+              "name": "characterskills"
+            },
+            "$ref": "#/definitions/CharacterSkills"
+          }
+        },
+        "inventory": {
+          "xml": {
+            "name": "characterinventory"
+          },
+          "$ref": "#/definitions/CharacterInventory"
+        },
+        "avatar": {
+          "type": "string",
+          "example": "avatar1"
+        }
+      },
+      "xml": {
+        "name": "Character"
+      }
+    },
+    "CharacterStats": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string",
+          "example": "12345"
+        },
+        "physical": {
+          "type": "number",
+          "example": 10
+        },
+        "mental": {
+          "type": "number",
+          "example": 10
+        },
+        "social": {
+          "type": "number",
+          "example": 10
+        },
+        "initiative": {
+          "type": "number",
+          "example": 10
+        }
+      },
+      "xml": {
+        "name": "CharacterStats"
+      }
+    },
+    "CharacterSkills": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string",
+          "example": "12345"
+        },
+        "skillSet": {
+          "type": "string",
+          "example": "Combat"
+        },
+        "skills": {
+          "type": "array",
+          "example": [
+            "Sword fighting",
+            "Archery"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "xml": {
+        "name": "CharacterSkills"
+      }
+    },
+    "CharacterInventory": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string",
+          "example": "12345"
+        },
+        "items": {
+          "type": "array",
+          "example": [
+            "Sword",
+            "Bow"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "xml": {
+        "name": "CharacterInventory"
+      }
+    }
+  }
+}
